@@ -61,23 +61,24 @@ const MainPage5 = () => {
         Join thousands of musicians, content creators, and businesses who use
         our AI song generator to turn ideas into professional music every day.
       </p>
-      <div className="flex  p-5 flex-wrap items-center  gap-5 mt-5">
+      <div className="flex  p-5 flex-wrap items-center justify-center  gap-5 mt-5">
         {creators.map((e) => {
           return (
             <div
               key={e.id}
-              className="flex flex-col  text-white  w-[400px]  rounded-x p-10  bg-gray-400"
+              className="flex flex-col  text-white  lg:w-150 lg:h-60   md:w-100 md:h-40   rounded-xl p-10  bg-zinc-900"
             >
               <div className="flex gap-2">
-                <div className="images h-10 w-10 rounded-[50%] bg-white">
-                  <img src={e.image} alt={e.name} />
+                <div className="images h-15 w-15 rounded-[50%] bg-white">
+                  <img src={e.image} alt={e.name} 
+                  className="h-full w-full object-cover rounded-full"/>
                 </div>
                 <div className="flex flex-col">
                   <h2> {e.name} </h2>
                   <h5> {e.role} </h5>
                 </div>
               </div>
-              <p className=""> {e.message} </p>
+              <p className="mt-4 text-sm text-zinc-300 leading-relaxed"> {e.message} </p>
             </div>
           );
         })}
