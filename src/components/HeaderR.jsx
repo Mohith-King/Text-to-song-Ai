@@ -3,7 +3,7 @@ import { Buttons, LanButtons } from "./Buttons";
 
 const HeaderR = ({ onMenuClick }) => {
   return (
-    <header className="bg-black  border-b-2  border-white py-4 px-4 flex gap-3 items-center ">
+    <header className="bg-black sticky border-b-2  border-white py-4 px-4 flex gap-3 items-center ">
       <div className="left flex-1  flex gap-3 items-center  ">
         <button type="button" aria-label="Toggle sidebar" onClick={onMenuClick}>
           <MenuSquare className="text-white cursor-pointer" size={20} />

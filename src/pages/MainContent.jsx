@@ -4,6 +4,8 @@ import MainVideos from "../components/MainVideos";
 import { CButtons } from "../components/Buttons";
 import MainPage2 from "./MainPage2";
 import MainPage3 from "./MainPage3";
+import MainPage4 from "./MainPage4";
+import MainPage5 from "./MainPage5";
 
 const MainContent = () => {
   const musicData = [
@@ -80,6 +82,8 @@ const MainContent = () => {
       <MainVideos />
       <MainPage2 />
       <MainPage3/>
+      <MainPage4/>
+      <MainPage5/>
     </div>
   );
 };

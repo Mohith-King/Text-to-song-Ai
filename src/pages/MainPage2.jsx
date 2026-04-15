@@ -41,7 +41,7 @@ const MainPage2 = () => {
     },
   ];
   return (
-    <div className="main2 w-full px-6 py-10 mt-10  ">
+    <div className="main2 w-full px-6 py-10 mt-10 no-scrollbar  ">
       <div className=" flex flex-col items-center  justify-center   mt-10 p-6">
         <h1 className="text-zinc-100 lg:text-4xl transition-all leading-tight mx-auto duration-200 max-w-4xl font-semibold md:text-5xl sm:text-4xl p-4 text-center">
           What Makes This Ai Song Generator Different

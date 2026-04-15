@@ -51,7 +51,7 @@ const SideBar = ({ sidebar = true, setSidebar = () => {} }) => {
     <aside
       className={`${
         sidebar ? "w-64" : "w-16"
-      }block bg-black py-6 px-3 border-r border-white h-screen transition-all duration-300`}
+      }block bg-black py-6 px-3 border-r  border-white h-screen transition-all duration-300`}
     >
       <div className="flex items-center justify-between">
         {sidebar && (
@@ -87,7 +87,7 @@ const SideBar = ({ sidebar = true, setSidebar = () => {} }) => {
 };
 
 /* Reusable Component */
-const MenuItem = ({ icon:Icon, label, sidebar, badge, badgeColor }) => {
+const MenuItem = ({ icon: Icon, label, sidebar, badge, badgeColor }) => {
   return (
     <div className="hover:bg-zinc-900 mt-1  flex justify-between items-center px-2 py-3 rounded-xl text-white cursor-pointer">
       <div className="flex items-center gap-3">
